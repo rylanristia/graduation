@@ -1,0 +1,115 @@
+body {
+  background-color: black;
+}
+
+main {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+nav .navbar .navbar-content {
+  width: 100%;
+  height: 63px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+nav .navbar .navbar-content .her-name {
+  color: white;
+}
+
+nav .navbar .navbar-content .her-name h2 {
+  font-size: 25px;
+  font-family: 'Gruppo', cursive;
+}
+
+nav .navbar .navbar-content .language {
+  margin-right: 40px;
+}
+
+nav .navbar .navbar-content .language h3 {
+  font-size: 15px;
+  font-weight: bolder;
+  color: gray;
+}
+
+.footer {
+  width: 100%;
+  height: 63px;
+  background-color: #2e2e2e;
+}
+
+.header .chapter-name {
+  -webkit-animation: fadedown;
+          animation: fadedown;
+  margin-top: -100px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadedown {
+  from {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  to {
+    opacity: 100%;
+    margin-top: 0;
+  }
+}
+
+@keyframes fadedown {
+  from {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  to {
+    opacity: 100%;
+    margin-top: 0;
+  }
+}
+
+.description {
+  color: white;
+  margin-top: 50px;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.description .typing {
+  -webkit-animation: typing;
+          animation: typing;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+/*# sourceMappingURL=graduation.css.map */
