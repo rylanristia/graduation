@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DiscographyController;
 use App\Http\Controllers\GraduationController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [GraduationController::class, 'index'])->name('graduation');
+Route::get('/', [GraduationController::class, 'firstsplash'])->name('first');
+Route::get('/second', [GraduationController::class, 'secondsplash'])->name('second');
+Route::get('/third', [GraduationController::class, 'thirdsplash'])->name('third');
+Route::get('/fourth', [GraduationController::class, 'fourthsplash'])->name('fourth');
+Route::get('/last-phase', [GraduationController::class, 'lastsplash'])->name('last');
+
+Route::get('/discography', [DiscographyController::class, 'index'])->name('discography');

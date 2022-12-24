@@ -1,22 +1,33 @@
 body {
     background-color: black;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 main {
     padding-top: 200px;
     padding-bottom: 200px;
+    position: absolute;
+    display: flex;
+    justify-items: center;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
 }
 
 nav {
     .navbar {
+        background-color: rgba(0, 0, 0, 0.377);
         .navbar-content {
             width: 100%;
             height: 63px;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.377);
             .her-name {
                 color: white;
                 h2 {
+                    letter-spacing: 0.2em;
                     font-size: 25px;
                     font-family: 'Gruppo', cursive;
                 }
@@ -33,10 +44,75 @@ nav {
     }
 }
 
-.footer {
+footer {
     width: 100%;
-    height: 63px;
-    background-color: rgb(46, 46, 46);
+    background-color: #272727;
+    .footer-content {
+        padding-top: 15px;
+        height: 60px;
+        .row {
+            ul {
+                margin-left: -35px;
+                li {
+                    background-color: black;
+                    border-radius: 100px;
+                    list-style: none;
+                }
+            }
+        }
+        .social {
+            vertical-align: middle;
+        }
+        .family-site {
+            min-width: 200px;
+            font-size: 13px;
+            text-align: center;
+            .family-inner {
+                background-color: transparent;
+                button {
+                    position: relative;
+                    background-color: transparent;
+                    cursor: pointer;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    color: #929191;
+                    width: 100%;
+                    width: 328px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                    margin-top: 5px;
+                }
+                button::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 18px;
+                    transform: rotate(225deg);
+                    width: 7px;
+                    height: 7px;
+                    margin-top: -2px;
+                    border: 1px solid #6b6b6b;
+                    border-width: 0 2px 2px 0;
+                }
+            }
+        }
+        .text-footer-1 {
+            text-align: right;
+            color: #929191;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .text-footer-2 {
+            text-align: right;
+            margin-top: -15px;
+            color: #929191;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
 }
 
 .header {
@@ -62,10 +138,19 @@ nav {
 
 .description {
     color: white;
+    width: 100%;
     margin-top: 50px;
     line-height: 2rem;
     text-align: justify;
     @keyframes typing {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes button {
         0% {
             opacity: 0;
         }
@@ -80,4 +165,87 @@ nav {
         animation-fill-mode: forwards;
         opacity: 0;
     }
+    a {
+        text-decoration: none;
+    }
+    .btn {
+        margin-top: 30px;
+        animation: button;
+        animation-delay: 6s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        position: relative;
+        cursor: pointer;
+        opacity: 0;
+        color: #6b6b6b;
+        background-color: transparent;
+        width: 300px;
+        display: block;
+        justify-content: center;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #6b6b6b 1px;
+        &:hover {
+            color: white;
+            border-bottom: white 1px solid;
+        }
+    }
+    button::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: rotate(-45deg);
+        width: 7px;
+        height: 7px;
+        margin-top: -2px;
+        border: 1px solid #6b6b6b;
+        border-width: 0 2px 2px 0;
+    }
+}
+
+.first-line {
+    font-family: 'Gruppo';
+    letter-spacing: 0.5em;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    animation: fade;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.second-line {
+    font-family: 'Gruppo';
+    letter-spacing: 0.5em;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    animation: fade;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+lottie-player {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    margin-top: 100px;
+    animation-delay: 2s;
 }
