@@ -4,28 +4,28 @@
             <div class="col-4">
                 <ul class="d-flex gap-2 text-decoration-none social">
                     <li>
-                        <img src="{{ url('images/twitter-star.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/twitter-star.png') }}" alt="" width="30px">
                     </li>
                     <li>
-                        <img src="{{ url('images/twitter.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/twitter.png') }}" alt="" width="30px">
                     </li>
                     <li>
-                        <img src="{{ url('images/insta.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/insta.png') }}" alt="" width="30px">
                     </li>
                     <li>
-                        <img src="{{ url('images/facebook.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/facebook.png') }}" alt="" width="30px">
                     </li>
                     <li>
-                        <img src="{{ url('images/youtube.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/youtube.png') }}" alt="" width="30px">
                     </li>
                     <li>
-                        <img src="{{ url('images/weibo.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/weibo.png') }}" alt="" width="30px">
                     </li>
                     <li>
-                        <img src="{{ url('images/youku.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/youku.png') }}" alt="" width="30px">
                     </li>
                     <li>
-                        <img src="{{ url('images/weverse.png') }}" alt="" width="30px">
+                        <img src="{{ url('../public/images/weverse.png') }}" alt="" width="30px">
                     </li>
                 </ul>
             </div>
