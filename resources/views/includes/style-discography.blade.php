@@ -14,4 +14,4 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 <!-- custom style -->
-<link rel="stylesheet" href="{{ url('css/discography.css') }}">
+<link rel="stylesheet" href="{{ url('../public/css/discography.css') }}">
