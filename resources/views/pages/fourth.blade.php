@@ -4,7 +4,8 @@
     <main style="height: 100%; overflow-y: hidden;">
         <div class="container content my-auto">
             <div class="header d-flex justify-content-center">
-                <img src="{{ url('images/complete-chapter.svg') }}" alt="" width="400px" class="chapter-name">
+                <img src="{{ url('../public/images/complete-chapter.svg') }}" alt="" width="400px"
+                    class="chapter-name">
             </div>
         </div>
     </main>

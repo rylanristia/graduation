@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="navbar-content d-flex justify-content-between">
                 <div class="hamburger-icon">
-                    <img src="{{ url('/images/hamburger.png') }}" alt="" class="hamburger" width="80px">
+                    <img src="{{ url('../public/images/hamburger.png') }}" alt="" class="hamburger" width="80px">
                 </div>
                 <div class="her-name">
                     <h2>aprilia anjani</h2>
