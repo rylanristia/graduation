@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="image-wrap">
-                            <img src="{{ url('images/album-image.png') }}" alt="" width="100%">
+                            <img src="{{ url('../public/images/album-image.png') }}" alt="" width="100%">
                         </div>
                     </div>
                     <div class="col-md-6">
